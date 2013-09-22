@@ -1,8 +1,8 @@
 # -*- mode: snippet -*-
-# key: for
+# key: pairs, foreach
 # contributor: Stefan van der Meer
 # name: for k,v in pairs()
 # --
-for ${1:k},${2:v} in pairs(${3:tbl_name}) do
-	$0
-end
+for ${1:key},${2:value} in pairs(${3:tableName}) do
+    $0
+end -- END for $1,$2 in pairs($3) do
